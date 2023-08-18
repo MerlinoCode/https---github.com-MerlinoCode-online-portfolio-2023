@@ -11,9 +11,6 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo">
-          <img src='https://img.icons8.com/?size=50&id=UjIAQPWjxwXQ&format=png' alt='Main logo of the webpage' />
-        </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Menu w={80} h={80}/>
         </div>

@@ -3,6 +3,7 @@ import JobSection from './components/JobSection'
 import Navbar from './components/Navbar'
 import Particle from './components/Particle'
 import PresentationCard from './components/PresentationCard'
+import Project from './components/Project'
 import Separator from './components/Separator'
 import SkillSection from './components/SkillSection'
 
@@ -20,6 +21,7 @@ const App = () => {
       <Separator id="experience" title="Experiencia"/>
       <JobSection/>
       <Separator id="projects" title="Proyectos"/>
+      <Project/>
       <Footer/>
       <Particle/>
     </>

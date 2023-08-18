@@ -5,15 +5,14 @@ $Text: #E4E4E4;
 $Primary: #60FFF8;
 $Secondary: #FC038C;
 $Accent: #31A8D1;
+$Background-accent: #31a9d13f;
 
 *,
 *::after,
 *::before {
     box-sizing: border-box;
 }
-.navbar, hr, .icon-skills{
-    margin-bottom: 3rem;
-}
+.navbar, hr, .icon-skills{ margin-bottom: 3rem; }
 hr {
     background: linear-gradient(to left, $Primary, $Secondary);
     height: 5px;
@@ -36,40 +35,29 @@ body {
     align-items: center;
     height: 100%;
 }
-
 .navbar {
     display: flex;
     height: 60px;
     position: relative;
 }
-
-.menu-icon {
-    display: none;
-}
-
+.menu-icon { display: none; }
 .nav-elements ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
-
-.nav-elements ul li:not(:last-child) {
-    margin-right: 60px;
-}
-
+.nav-elements ul li:not(:last-child) { margin-right: 60px; }
 .nav-elements ul a {
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
     color: $Text;
 }
-
 .nav-elements ul a.active {
     color: #574c4c;
     font-weight: 500;
     position: relative;
 }
-
 .nav-elements ul a.active::after {
     position: absolute;
     bottom: -4px;
@@ -88,7 +76,6 @@ body {
     text-shadow: 0px 0px 40px $Primary;
 }
 /*Presentation Card style*/
-
 .card{
     display: flex;
     margin: 3rem;
@@ -107,9 +94,7 @@ body {
     background-clip: content-box, border-box;
     padding: 0 30px;
 }
-.card h1, h2 ,h3 ,h4 ,h5 {
-    margin: 0 0;
-}
+.card h1, h2 ,h3 ,h4 ,h5 { margin: 0 0; }
 .card h1 {
     font-size: 36px;
     font-weight: bold;
@@ -172,10 +157,7 @@ body {
     position: absolute;
     margin: 0 37.4rem;
 }
-#arrow{
-    width: 20px;
-}
-
+#arrow{ width: 20px; }
 .job-experience{
     width: 30rem;
     display: flex;
@@ -228,15 +210,52 @@ body {
     margin: 5.5rem 0 0 5rem;
     float: right;
 }
-.job-wrapper{
-    display: flex;
-}
+.job-wrapper{ display: flex; }
 .job-section{
     margin-bottom: 6rem ;
     display: flex;
     flex-direction: column;
 }
-
+.project-wrapper{
+    display: flex;
+}
+.project-container
+{
+    display: grid;
+    max-width: 60vw;
+    border-radius: 15px;
+    height: 21rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    position: relative;
+    padding: 2rem;
+    text-align: left;
+    background-color: $Background-accent;
+}
+.project-title{
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+.project-description{
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+.project-links{
+    grid-column: 1/ 4;
+    grid-row: 3;
+    gap: 3rem;
+    display: inline-flex;
+    justify-content: center;
+}
+.project-preview{
+    border-radius: 1rem;
+    background: radial-gradient(circle at 50% 50%, rgba(139, 195, 74, 0) 24%, rgba(49, 169, 209, 0.25) 75%),url('../styles/images/project-preview.jpg');
+    background-size: cover;
+    grid-column: 4/7;
+    grid-row: 2/3;
+}
 footer{
     margin: 6rem 0 0 0;
     text-align: center;
@@ -252,9 +271,7 @@ footer{
     color: $Text;
     font-weight: 500;
 }
-.footer-text a:hover{
-    color: $Primary;
-}
+.footer-text a:hover{ color: $Primary; }
 @media (max-width: 768px) {
     .nav-elements ul li:not(:last-child) {
         margin-right: 30px;
@@ -280,7 +297,6 @@ footer{
         left: 24.8rem;
     }
 }
-
 @media (max-width: 600px) {
     .menu-icon {
         display: block;
@@ -317,24 +333,12 @@ footer{
         height: 20rem;
         max-width: 90vw;
     }
-    .card h1{
-        font-size: 30px;
-    }
-    .card h3{
-        font-size: 26px;
-    }
-    .card h4{
-        font-size: 16px;
-    }
-    .container{
-        gap: 50vw;
-    }
-    .wrap-arrow{
-        margin: 0 0 0 26.5rem;
-    }
-    .company-logo{
-        margin: 5.5rem 0 0 1.5rem;
-    }
+    .card h1{ font-size: 30px; }
+    .card h3{ font-size: 26px; }
+    .card h4{ font-size: 16px; }
+    .container{ gap: 50vw; }
+    .wrap-arrow{ margin: 0 0 0 26.5rem; }
+    .company-logo{ margin: 5.5rem 0 0 1.5rem; }
     .job-experience::before{
         margin: 2.7rem 0;
         border-top: 20px solid transparent;

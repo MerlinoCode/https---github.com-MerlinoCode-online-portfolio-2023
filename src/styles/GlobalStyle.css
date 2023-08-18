@@ -258,6 +258,51 @@ body {
   flex-direction: column;
 }
 
+.project-wrapper {
+  display: flex;
+}
+
+.project-container {
+  display: grid;
+  max-width: 60vw;
+  border-radius: 15px;
+  height: 21rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  position: relative;
+  padding: 2rem;
+  text-align: left;
+  background-color: rgba(49, 169, 209, 0.2470588235);
+}
+
+.project-title {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+
+.project-description {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
+.project-links {
+  grid-column: 1/4;
+  grid-row: 3;
+  gap: 3rem;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.project-preview {
+  border-radius: 1rem;
+  background: radial-gradient(circle at 50% 50%, rgba(139, 195, 74, 0) 24%, rgba(49, 169, 209, 0.25) 75%), url("../styles/images/project-preview.jpg");
+  background-size: cover;
+  grid-column: 4/7;
+  grid-row: 2/3;
+}
+
 footer {
   margin: 6rem 0 0 0;
   text-align: center;
