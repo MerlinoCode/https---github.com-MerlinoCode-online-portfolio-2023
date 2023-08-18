@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.navbar, hr, .icon-skills {
+  margin-bottom: 3rem;
+}
+
+hr {
+  background: linear-gradient(to left, #60FFF8, #FC038C);
+  height: 5px;
+}
+
+body {
+  margin: 20px 0 0 0;
+  font-family: "Poppins", sans-serif;
+  color: #E4E4E4;
+  display: flex;
+  padding: 0px 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  height: 60px;
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #E4E4E4;
+}
+
+.nav-elements ul a.active {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+  font-size: 100%;
+}
+
+.nav-elements ul li a {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-elements ul li a:hover {
+  color: #60FFF8;
+  text-shadow: 0px 0px 40px #60FFF8;
+}
+
+/*Presentation Card style*/
+.card {
+  display: flex;
+  margin: 3rem;
+  height: 20rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  border-width: 4px;
+  border-style: solid;
+  -o-border-image: linear-gradient(#60FFF8 0%, #FC038C 100%) 30;
+     border-image: linear-gradient(#60FFF8 0%, #FC038C 100%) 30;
+  border-radius: 36px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding: 0 30px;
+}
+
+.card h1, h2, h3, h4, h5 {
+  margin: 0 0;
+}
+
+.card h1 {
+  font-size: 36px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(0deg, #60FFF8 0%, #FC038C 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card h3 {
+  color: #60FFF8;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.card h5 {
+  color: #31A8D1;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.card h4 {
+  color: #E4E4E4;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.icon-links {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
+}
+
+/*Separator styles*/
+.icon-skills {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.separator-title {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.separator-title, .sub-title {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.tech {
+  display: flex;
+  width: 115px;
+  flex-direction: column;
+}
+
+.tech-text {
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 99.125%;
+}
+
+.wrap-arrow {
+  position: absolute;
+  margin: 0 37.4rem;
+}
+
+#arrow {
+  width: 20px;
+}
+
+.job-experience {
+  width: 30rem;
+  display: flex;
+  padding: 1rem 1rem 1rem 0;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 2px solid #FC038C;
+  margin: 3rem 0 0 0;
+  left: 44vh;
+}
+
+.job-experience h1 {
+  color: #60FFF8;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0.3em auto;
+}
+
+.job-experience h2 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin: 0.3em auto;
+}
+
+.job-experience h4 {
+  color: #FFF;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+}
+
+.job-experience p {
+  margin: 1em 0 0 0;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.8px;
+}
+
+.job-experience::before {
+  content: "";
+  position: relative;
+  margin: 3rem 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #FC038C;
+  left: 29.7rem;
+}
+
+.company-logo {
+  z-index: 2;
+  margin: 5.5rem 0 0 5rem;
+  float: right;
+}
+
+.job-wrapper {
+  display: flex;
+}
+
+.job-section {
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin: 6rem 0 0 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text {
+  font-weight: 200;
+  margin: 0.5rem auto;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: #E4E4E4;
+  font-weight: 500;
+}
+
+.footer-text a:hover {
+  color: #60FFF8;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .separator-title {
+    font-size: 38px;
+  }
+  hr {
+    max-width: 90vw;
+  }
+  .icon-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 6em;
+  }
+  .job-section {
+    margin: 0 6% 3rem 6%;
+  }
+  .wrap-arrow {
+    margin: 0 0 0 32.5rem;
+  }
+  .job-experience::before {
+    left: 24.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    margin: auto 0;
+  }
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #2a2a2a;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+  .nav-elements.active {
+    width: 270px;
+    z-index: 2;
+  }
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+  .card {
+    margin: 3rem auto;
+    height: 20rem;
+    max-width: 90vw;
+  }
+  .card h1 {
+    font-size: 30px;
+  }
+  .card h3 {
+    font-size: 26px;
+  }
+  .card h4 {
+    font-size: 16px;
+  }
+  .container {
+    gap: 50vw;
+  }
+  .wrap-arrow {
+    margin: 0 0 0 26.5rem;
+  }
+  .company-logo {
+    margin: 5.5rem 0 0 1.5rem;
+  }
+  .job-experience::before {
+    margin: 2.7rem 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #FC038C;
+    left: 22.3rem;
+  }
+  .job-experience h1 {
+    font-size: 20px;
+  }
+  .job-experience h2 {
+    font-size: 16px;
+  }
+  .job-experience h4 {
+    font-size: 12px;
+  }
+  .job-experience p {
+    font-size: 11px;
+  }
+  .company-logo-svg {
+    height: 75px;
+  }
+  #arrow {
+    width: 18px;
+  }
+  .job-section {
+    margin: 0 10% 3rem 10%;
+  }
+  footer {
+    margin: 0 22%;
+  }
+  .footer-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  #githubcard, #codepencard, #linkedincard {
+    height: 80px;
+  }
+  .icon-links {
+    display: inline;
+    gap: 20px;
+  }
+  .card {
+    text-align: center;
+    height: 18rem;
+    padding: 0 15px;
+  }
+  .card h5 {
+    font-size: 16px;
+  }
+  .card h1 {
+    font-size: 24px;
+  }
+  .card h3 {
+    font-size: 20px;
+  }
+  .icon-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tech {
+    width: auto;
+    text-align: center;
+    display: inline;
+  }
+  .job-section {
+    margin: 0 18% 3rem 18%;
+  }
+  .wrap-arrow {
+    margin: 0 0 0 20.3rem;
+  }
+  .job-experience::before {
+    left: 16.1rem;
+  }
+  #arrow {
+    width: 22px;
+  }
+  .job-experience h1 {
+    font-size: 14px;
+  }
+  .job-experience h2 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .icon-skills {
+    margin: 0 8rem;
+  }
+  .job-section {
+    margin: 0 22% 3rem 22%;
+  }
+  .wrap-arrow {
+    margin: 0 0 0 17.3rem;
+  }
+  #arrow {
+    width: 24px;
+  }
+  .job-experience::before {
+    left: 13.2rem;
+  }
+  .job-experience h1 {
+    font-size: 11.6px;
+  }
+  .job-experience p {
+    font-size: 10px;
+  }
+  .card {
+    padding: 0 10px;
+  }
+  .card h4 {
+    font-size: 14px;
+  }
+  #githubcard, #linkedincard, #codepencard {
+    height: 70px;
+  }
+}/*# sourceMappingURL=GlobalStyle.css.map */

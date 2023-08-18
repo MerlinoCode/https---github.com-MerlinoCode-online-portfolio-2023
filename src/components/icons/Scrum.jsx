@@ -1,0 +1,21 @@
+import React from 'react'
+
+const Scrum = () => {
+  return (
+    <div className='tech'>
+      <svg width="116" height="99" viewBox="0 0 116 99" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <title>Scrum</title>
+        <rect id="Sprint Iteration" x="0.5" width="115" height="99" fill="url(#pattern12)"/>
+        <defs>
+        <pattern id="pattern12" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlinkHref="#image0_92_25" transform="matrix(0.0086087 0 0 0.01 0.0695652 0)"/>
+        </pattern>
+        <image id="image0_92_25" width="100" height="100" xlinkHref="data:image/png;base64,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"/>
+        </defs>
+    </svg>
+      <p className='tech-text'>SCRUM</p>
+    </div>
+  )
+}
+
+export default Scrum
