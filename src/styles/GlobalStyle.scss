@@ -155,7 +155,7 @@ body {
 }
 .wrap-arrow{
     position: absolute;
-    margin: 0 37.4rem;
+    margin: 0 42.5rem;
 }
 #arrow{ width: 20px; }
 .job-experience{
@@ -210,9 +210,9 @@ body {
     margin: 5.5rem 0 0 5rem;
     float: right;
 }
-.job-wrapper{ display: flex; }
+.job-wrapper{ display: flex; justify-content: center; }
 .job-section{
-    margin-bottom: 6rem ;
+    margin-bottom: 6rem;
     display: flex;
     flex-direction: column;
 }
@@ -222,39 +222,27 @@ body {
 .project-container
 {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    margin: 0 auto;
     max-width: 60vw;
     border-radius: 15px;
-    height: 21rem;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr); 
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
     position: relative;
     padding: 2rem;
-    text-align: left;
     background-color: $Background-accent;
 }
-.project-title{
-    grid-column: 1 / 4;
-    grid-row: 1;
-}
+.project-title{ color: $Primary;}
 .project-description{
-    grid-column: 1 / 4;
-    grid-row: 2;
+    word-wrap: break-word;
 }
 .project-links{
-    grid-column: 1/ 4;
-    grid-row: 3;
     gap: 3rem;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
 }
-.project-preview{
-    border-radius: 1rem;
-    background: radial-gradient(circle at 50% 50%, rgba(139, 195, 74, 0) 24%, rgba(49, 169, 209, 0.25) 75%),url('../styles/images/project-preview.jpg');
-    background-size: cover;
-    grid-column: 4/7;
-    grid-row: 2/3;
+#project-preview{
+    height: auto;
+    max-width: 100%;
 }
 footer{
     margin: 6rem 0 0 0;
@@ -272,6 +260,11 @@ footer{
     font-weight: 500;
 }
 .footer-text a:hover{ color: $Primary; }
+@media (max-width:1080px) {
+    .project-container{
+        max-width: fit-content;
+    }
+}
 @media (max-width: 768px) {
     .nav-elements ul li:not(:last-child) {
         margin-right: 30px;
@@ -295,6 +288,14 @@ footer{
     }
     .job-experience::before{
         left: 24.8rem;
+    }
+    .project-container{
+        margin: 0 3rem;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .right-part{
+        margin: 0 auto;
     }
 }
 @media (max-width: 600px) {
@@ -355,6 +356,7 @@ footer{
     .job-section { margin: 0 10% 3rem 10%; }
     footer{ margin: 0 22%; }
     .footer-text { font-size: 12px;}
+    .project-container{ margin: 0 6rem; }
 }
 @media(max-width: 500px) {
     #githubcard, #codepencard, #linkedincard{ height: 80px; }
@@ -382,6 +384,7 @@ footer{
     #arrow { width: 22px;}
     .job-experience h1 { font-size: 14px; }
     .job-experience h2 { font-size: 13px; }
+    .project-container{ margin: 0 7rem; }
 }
 @media(max-width: 400px){
     .icon-skills{ margin: 0 8rem; }
@@ -394,4 +397,5 @@ footer{
     .card { padding: 0 10px; }
     .card h4{ font-size: 14px; }
     #githubcard, #linkedincard, #codepencard { height: 70px; }
+    .project-container{ margin: 0 8.5rem; }
 }
