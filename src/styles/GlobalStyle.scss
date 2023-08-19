@@ -6,6 +6,7 @@ $Primary: #60FFF8;
 $Secondary: #FC038C;
 $Accent: #31A8D1;
 $Background-accent: #31a9d13f;
+$Background-Responsive-Menu: #131313;
 
 *,
 *::after,
@@ -22,7 +23,7 @@ body {
     font-family: "Poppins", sans-serif;
     color: $Text;
     display: flex;
-    padding: 0px 100px;
+    padding: 0px 20vw;
     flex-direction: column;
     align-items: center;
 }
@@ -41,12 +42,15 @@ body {
     position: relative;
 }
 .menu-icon { display: none; }
+.nav-elements { z-index: 3;}
 .nav-elements ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
-.nav-elements ul li:not(:last-child) { margin-right: 60px; }
+.nav-elements ul li{
+    margin-right: 2rem;
+}
 .nav-elements ul a {
     font-size: 16px;
     font-weight: 400;
@@ -78,6 +82,7 @@ body {
 /*Presentation Card style*/
 .card{
     display: flex;
+    text-align: center;
     margin: 3rem;
     height: 20rem;
     flex-direction: column;
@@ -208,7 +213,7 @@ body {
     max-width: 75vw;
     margin-bottom: 6rem;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-columns: 5vw 3fr 1fr 5vw;
     grid-auto-flow: row;
 }
 .job-experience-arrow{
@@ -298,9 +303,7 @@ footer{
     }
 }
 @media (max-width: 768px) {
-    .nav-elements ul li:not(:last-child) {
-        margin-right: 30px;
-    }
+    .card{ margin: auto auto 3rem auto; }
     .separator-title{
         font-size: 38px;
     }
@@ -336,7 +339,7 @@ footer{
         position: absolute;
         right: 0;
         top: 60px;
-        background-color: #2a2a2a;
+        background-color: $Background-Responsive-Menu;
         width: 0px;
         height: calc(100vh - 60px);
         transition: all 0.3s ease-in;
@@ -344,7 +347,7 @@ footer{
     }
     
     .nav-elements.active {
-        width: 270px;
+        width: 100vw;
         z-index: 2;
     }
     
@@ -355,7 +358,8 @@ footer{
     
     .nav-elements ul li {
         margin-right: unset;
-        margin-top: 22px;
+        margin-top: 3rem;
+        text-align: center;
     }
     .card{
         margin: 3rem auto;
@@ -390,9 +394,9 @@ footer{
         height: 18rem;
         padding: 0 15px;
     }
-    .card h5{ font-size: 16px; }
-    .card h1{ font-size: 24px; }
-    .card h3{ font-size: 20px; }
+    .card h5{ font-size: 15px; }
+    .card h1{ font-size: 23px; }
+    .card h3{ font-size: 19px; }
     .icon-skills{ grid-template-columns: repeat(2, 1fr); }
     .tech{
         width: auto;
@@ -414,6 +418,7 @@ footer{
     .job-experience h1{ font-size: 11.6px; }
     .job-experience p{ font-size: 10px; }
     .card { padding: 0 10px; }
+    .card h1{ font-size: 21px; }
     .card h4{ font-size: 14px; }
     #githubcard, #linkedincard, #codepencard { height: 70px; }
     .project-container{ margin: 0 8.5rem; }

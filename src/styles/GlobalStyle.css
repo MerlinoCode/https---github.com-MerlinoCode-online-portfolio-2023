@@ -20,7 +20,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #E4E4E4;
   display: flex;
-  padding: 0px 100px;
+  padding: 0px 20vw;
   flex-direction: column;
   align-items: center;
 }
@@ -45,14 +45,18 @@ body {
   display: none;
 }
 
+.nav-elements {
+  z-index: 3;
+}
+
 .nav-elements ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
 
-.nav-elements ul li:not(:last-child) {
-  margin-right: 60px;
+.nav-elements ul li {
+  margin-right: 2rem;
 }
 
 .nav-elements ul a {
@@ -91,6 +95,7 @@ body {
 /*Presentation Card style*/
 .card {
   display: flex;
+  text-align: center;
   margin: 3rem;
   height: 20rem;
   flex-direction: column;
@@ -242,7 +247,7 @@ body {
   max-width: 75vw;
   margin-bottom: 6rem;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-columns: 5vw 3fr 1fr 5vw;
   grid-auto-flow: row;
 }
 
@@ -353,8 +358,8 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .nav-elements ul li:not(:last-child) {
-    margin-right: 30px;
+  .card {
+    margin: auto auto 3rem auto;
   }
   .separator-title {
     font-size: 38px;
@@ -397,14 +402,14 @@ footer {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #2a2a2a;
+    background-color: #131313;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
   }
   .nav-elements.active {
-    width: 270px;
+    width: 100vw;
     z-index: 2;
   }
   .nav-elements ul {
@@ -413,7 +418,8 @@ footer {
   }
   .nav-elements ul li {
     margin-right: unset;
-    margin-top: 22px;
+    margin-top: 3rem;
+    text-align: center;
   }
   .card {
     margin: 3rem auto;
@@ -480,13 +486,13 @@ footer {
     padding: 0 15px;
   }
   .card h5 {
-    font-size: 16px;
+    font-size: 15px;
   }
   .card h1 {
-    font-size: 24px;
+    font-size: 23px;
   }
   .card h3 {
-    font-size: 20px;
+    font-size: 19px;
   }
   .icon-skills {
     grid-template-columns: repeat(2, 1fr);
@@ -536,6 +542,9 @@ footer {
   }
   .card {
     padding: 0 10px;
+  }
+  .card h1 {
+    font-size: 21px;
   }
   .card h4 {
     font-size: 14px;
