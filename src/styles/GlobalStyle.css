@@ -11,7 +11,7 @@
 }
 
 hr {
-  background: linear-gradient(to left, #60FFF8, #FC038C);
+  background: linear-gradient(to left, #61fff7, #FC038C);
   height: 5px;
 }
 
@@ -88,8 +88,8 @@ body {
 }
 
 .nav-elements ul li a:hover {
-  color: #60FFF8;
-  text-shadow: 0px 0px 40px #60FFF8;
+  color: #61fff7;
+  text-shadow: 0px 0px 40px #61fff7;
 }
 
 /*Presentation Card style*/
@@ -103,8 +103,8 @@ body {
   flex-shrink: 0;
   border-width: 4px;
   border-style: solid;
-  -o-border-image: linear-gradient(#60FFF8 0%, #FC038C 100%) 30;
-     border-image: linear-gradient(#60FFF8 0%, #FC038C 100%) 30;
+  -o-border-image: linear-gradient(#61fff7 0%, #FC038C 100%) 30;
+     border-image: linear-gradient(#61fff7 0%, #FC038C 100%) 30;
   border-radius: 36px;
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -118,14 +118,14 @@ body {
 .card h1 {
   font-size: 36px;
   font-weight: bold;
-  background: -webkit-linear-gradient(0deg, #60FFF8 0%, #FC038C 100%);
+  background: -webkit-linear-gradient(0deg, #61fff7 0%, #FC038C 100%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .card h3 {
-  color: #60FFF8;
+  color: #61fff7;
   font-size: 32px;
   font-weight: 500;
 }
@@ -205,7 +205,7 @@ body {
 }
 
 .job-experience h1 {
-  color: #60FFF8;
+  color: #61fff7;
   font-size: 24px;
   font-weight: 500;
   margin: 0.3em auto;
@@ -306,7 +306,7 @@ body {
 }
 
 .project-title {
-  color: #60FFF8;
+  color: #61fff7;
 }
 
 .project-description {
@@ -331,6 +331,11 @@ footer {
   flex-direction: column;
 }
 
+#firework {
+  margin: 0 auto;
+  transform: rotate(-45deg);
+}
+
 .footer-text {
   font-weight: 200;
   margin: 0.3rem auto;
@@ -343,7 +348,7 @@ footer {
 }
 
 .footer-text a:hover {
-  color: #60FFF8;
+  color: #61fff7;
 }
 
 @media (max-width: 1080px) {
@@ -393,6 +398,9 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  body {
+    padding: initial;
+  }
   .menu-icon {
     display: block;
     cursor: pointer;
@@ -402,15 +410,18 @@ footer {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #131313;
+    background-color: rgba(13, 13, 13, 0.97);
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
   }
   .nav-elements.active {
-    width: 100vw;
+    width: 100%;
     z-index: 2;
+  }
+  .nav-elements ul a {
+    font-size: 20px;
   }
   .nav-elements ul {
     display: flex;

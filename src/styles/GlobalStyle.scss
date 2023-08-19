@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $Text: #E4E4E4;
-$Primary: #60FFF8;
+$Primary: #61fff7;
 $Secondary: #FC038C;
 $Accent: #31A8D1;
 $Background-accent: #31a9d13f;
-$Background-Responsive-Menu: #131313;
+$Background-Responsive-Menu: rgba(13, 13, 13, 0.97);
 
 *,
 *::after,
@@ -283,6 +283,10 @@ footer{
     display: flex;
     flex-direction: column;
 }
+#firework{
+    margin: 0 auto;
+    transform: rotate(-45deg);
+}
 .footer-text{
     font-weight: 200;
     margin: .3rem auto;
@@ -330,6 +334,9 @@ footer{
     .company-logo-svg{ height: 80px; }
 }
 @media (max-width: 600px) {
+    body{
+        padding: initial;
+    }
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -347,10 +354,12 @@ footer{
     }
     
     .nav-elements.active {
-        width: 100vw;
+        width: 100%;
         z-index: 2;
     }
-    
+    .nav-elements ul a {
+        font-size: 20px;
+    }
     .nav-elements ul {
         display: flex;
         flex-direction: column;

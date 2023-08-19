@@ -16,10 +16,10 @@ const Navbar = () => {
         </div>
       <div className={`nav-elements  ${showNavbar && 'active'}`}>
         <ul>
-          <li><a href='#about-me'>Sobre mí</a></li>
-          <li><a href='#skills'>Habilidades</a></li>
-          <li><a href='#experience'>Experiencia</a></li>
-          <li><a href='#projects'>Proyectos</a></li>
+          <li><a onClick={handleShowNavbar} href='#about-me'>Sobre mí</a></li>
+          <li><a onClick={handleShowNavbar} href='#skills'>Habilidades</a></li>
+          <li><a onClick={handleShowNavbar} href='#experience'>Experiencia</a></li>
+          <li><a onClick={handleShowNavbar} href='#projects'>Proyectos</a></li>
         </ul>
       </div>
       </div>
