@@ -1,5 +1,4 @@
 import React from 'react'
-import Arrow from './Arrow'
 import JobExperience from './JobExperience'
 import BancoGaliciaLogo from './icons/BancoGaliciaLogo'
 import NepsLogo from './icons/NepsLogo'
@@ -31,7 +30,8 @@ const JobSection = () => {
           jobDate="Enero/2021 - Agosto/2021 ( 8 meses )"
           jobIcon = {<NepsLogo/>}
           />
-        <Arrow/>
+          <div className='column-icons'>
+          </div>
     </div>
   )
 }

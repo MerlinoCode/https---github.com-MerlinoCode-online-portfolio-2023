@@ -11,7 +11,10 @@ const JobExperience = (props) => {
             <p>{props.jobDate}</p>
         </div>
       </div>
+      <div className='job-experience-arrow'></div>
+      <div className='job-icon-section'>
       {props.jobIcon}
+      </div>
     </div>
   )
 }
