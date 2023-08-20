@@ -2,7 +2,7 @@ import React from 'react'
 
 const Menu = (props) => {
   return (
-    <svg width={props.w} height={props.h} viewBox="0 0 45 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg width={props.w} height={props.h} viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <rect width={props.w} height={props.h} fill="url(#pattern0)"/>
         <defs>
             <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

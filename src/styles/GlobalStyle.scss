@@ -344,12 +344,12 @@ footer{
     .menu-icon {
         display: block;
         cursor: pointer;
-        margin: auto 0;
+        margin: auto;
     }
     .nav-elements {
         position: absolute;
         right: 0;
-        top: 60px;
+        top: 5.5rem;
         background-color: $Background-Responsive-Menu;
         width: 0px;
         height: calc(100vh - 60px);
