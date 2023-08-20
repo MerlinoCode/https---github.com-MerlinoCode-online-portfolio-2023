@@ -3,9 +3,9 @@ import React from 'react'
 const Figma = () => {
   return (
     <div className="tech">
-      <a href='https://www.figma.com/' alt="Figma logo">
+      <a href='https://www.figma.com/' target='_blank'>
         <svg width="116" height="99" viewBox="0 0 116 99" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-          <title>Figma Logo</title>
+          <title>Figma</title>
           <desc>Figma is the leading collaborative design tool for building meaningful products. Seamlessly design, prototype, develop, and collect feedback in a single platform.</desc>
           <rect id="Figma" x="0.5" width="115" height="99" fill="url(#pattern7)"/>
           <defs>

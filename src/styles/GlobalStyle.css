@@ -331,6 +331,11 @@ footer {
   flex-direction: column;
 }
 
+.firework-link {
+  margin: 0 auto;
+  width: 3.5rem;
+}
+
 #firework {
   margin: 0 auto;
   transform: rotate(-45deg);
@@ -514,13 +519,16 @@ footer {
     display: inline;
   }
   .job-section {
-    margin: 0 3.3rem 3rem 3.3rem;
+    margin: 0 0.5rem 3rem 0.5rem;
   }
   .wrap-arrow {
     margin: 0 0 0 20.3rem;
   }
   #arrow {
     width: 22px;
+  }
+  .job-experience {
+    padding: 0.4rem;
   }
   .job-experience h1 {
     font-size: 14px;
@@ -529,7 +537,7 @@ footer {
     font-size: 13px;
   }
   .project-container {
-    margin: 0 7rem;
+    margin: 0 1rem;
   }
 }
 @media (max-width: 400px) {
@@ -537,7 +545,7 @@ footer {
     margin: 0 8rem;
   }
   .job-section {
-    margin: 0 20% 3rem 20%;
+    margin: 0 15% 3rem 15%;
   }
   .wrap-arrow {
     margin: 0 0 0 17.3rem;
@@ -546,10 +554,10 @@ footer {
     width: 24px;
   }
   .job-experience h1 {
-    font-size: 11.6px;
+    font-size: 13px;
   }
   .job-experience p {
-    font-size: 10px;
+    font-size: 9.5px;
   }
   .card {
     padding: 0 10px;
@@ -564,6 +572,6 @@ footer {
     height: 70px;
   }
   .project-container {
-    margin: 0 8.5rem;
+    margin: 0 4rem;
   }
 }/*# sourceMappingURL=GlobalStyle.css.map */

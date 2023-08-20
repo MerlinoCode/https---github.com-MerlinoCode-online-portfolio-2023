@@ -283,6 +283,10 @@ footer{
     display: flex;
     flex-direction: column;
 }
+.firework-link{
+    margin: 0 auto;
+    width: 3.5rem;
+}
 #firework{
     margin: 0 auto;
     transform: rotate(-45deg);
@@ -412,23 +416,24 @@ footer{
         text-align: center;
         display: inline;
     }
-    .job-section { margin: 0 3.3rem 3rem 3.3rem; }
+    .job-section { margin: 0 .5rem 3rem .5rem; }
     .wrap-arrow { margin: 0 0 0 20.3rem; }
     #arrow { width: 22px;}
+    .job-experience { padding: .4rem; }
     .job-experience h1 { font-size: 14px; }
     .job-experience h2 { font-size: 13px; }
-    .project-container{ margin: 0 7rem; }
+    .project-container{ margin: 0 1rem; }
 }
 @media(max-width: 400px){
     .icon-skills{ margin: 0 8rem; }
-    .job-section{ margin: 0 20% 3rem 20%; }
+    .job-section{ margin: 0 15% 3rem 15%; }
     .wrap-arrow{ margin: 0 0 0 17.3rem; }
     #arrow{ width: 24px; }
-    .job-experience h1{ font-size: 11.6px; }
-    .job-experience p{ font-size: 10px; }
+    .job-experience h1{ font-size: 13px; }
+    .job-experience p{ font-size: 9.5px; }
     .card { padding: 0 10px; }
     .card h1{ font-size: 21px; }
     .card h4{ font-size: 14px; }
     #githubcard, #linkedincard, #codepencard { height: 70px; }
-    .project-container{ margin: 0 8.5rem; }
+    .project-container{ margin: 0 4rem; }
 }
