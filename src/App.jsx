@@ -6,24 +6,27 @@ import PresentationCard from './components/PresentationCard'
 import Project from './components/Project'
 import Separator from './components/Separator'
 import SkillSection from './components/SkillSection'
+import { LanguageProvider } from './context/LanguageContext'
 
 const App = () => {
 
   return (
     <>
-      <Navbar/>
-      <PresentationCard/>
-      <Separator id="about-me" title="Sobre mí"/>
-      <Separator id="skills" title="Habilidades"/>
-      <SkillSection title="FRONT END"/>
-      <SkillSection title="DISEÑO"/>
-      <SkillSection title="OTROS"/>
-      <Separator id="experience" title="Experiencia"/>
-      <JobSection/>
-      <Separator id="projects" title="Proyectos"/>
-      <Project/>
-      <Footer/>
-      <Particle/>
+      <LanguageProvider>
+        <Navbar/>
+        <PresentationCard/>
+        <Separator id="about_me"/>
+        <Separator id="skills"/>
+        <SkillSection title="frontend"/>
+        <SkillSection title="design"/>
+        <SkillSection title="others"/>
+        <Separator id="experience"/>
+        <JobSection/>
+        <Separator id="projects"/>
+        <Project/>
+        <Footer/>
+        <Particle/>
+      </LanguageProvider>
     </>
   )
 }

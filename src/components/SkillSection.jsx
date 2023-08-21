@@ -13,16 +13,30 @@ import MicrosoftSqlServer from './icons/MicrosoftSqlServer'
 import Scrum from './icons/Scrum'
 import VisualStudioCode from './icons/VisualStudioCode'
 import GreatBritain from './icons/GreatBritain'
-
+import { useLanguage } from '../context/LanguageContext';
 
 const SkillSection = (props) => {
+  const {translations} = useLanguage();
   return (
     <>
-        <div className='sub-title'>{props.title}</div>
+        <div className='sub-title'>
+        {(() => {
+        switch (props.title) {
+          case 'frontend':
+            return <>{translations.skill_section.frontend}</>
+          case 'design':
+            return <>{translations.skill_section.design}</>
+          case 'others':
+            return <>{translations.skill_section.others}</>
+          default:
+            return null
+        }
+        })()}
+        </div>
         <br/>
         {(() => {
         switch (props.title) {
-          case 'FRONT END':
+          case 'frontend':
             return <div className='icon-skills'>
                     <Html5/>
                     <Css3/>
@@ -31,13 +45,13 @@ const SkillSection = (props) => {
                     <Sass/>
                     <Bootstrap/>
                   </div>
-          case 'DISEÑO':
+          case 'design':
             return <div className='icon-skills'>
                     <Figma/>
                     <Photoshop/>
                     <AfterEffects/>
                   </div>
-          case 'OTROS':
+          case 'others':
             return <div className='icon-skills'>
                       <Git/>
                       <MicrosoftSqlServer/>

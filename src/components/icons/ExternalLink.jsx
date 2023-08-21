@@ -1,9 +1,11 @@
 import React from 'react'
+import { useLanguage } from '../../context/LanguageContext';
 
 const ExternalLink = () => {
+  const {translations} = useLanguage();
   return (
     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-      <title>External Link</title>
+      <title>{translations.miscellaneous.external_link_title}</title>
       <rect id="Linking" width="50" height="50" fill="url(#pattern21)"/>
       <defs>
       <pattern id="pattern21" patternContentUnits="objectBoundingBox" width="1" height="1">

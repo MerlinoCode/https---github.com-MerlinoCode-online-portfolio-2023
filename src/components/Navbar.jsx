@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Menu from './icons/Menu'
 import XCross from './icons/XCross'
+import { useLanguage } from '../context/LanguageContext';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -9,6 +10,10 @@ const Navbar = () => {
 
   const handleShowNavbar = () => { setShowNavbar(!showNavbar) }
   const handleChangeIconMenu = () => { setChangeIconMenu(!changeIconMenu) }
+  const { language, setLanguage, translations } = useLanguage();
+
+  const toggleLanguage = () => { setLanguage(language === 'es' ? 'en' : 'es'); };
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -19,10 +24,11 @@ const Navbar = () => {
         </div>
       <div className={`nav-elements  ${showNavbar && 'active'}`}>
         <ul>
-          <li><a onClick={handleShowNavbar} href='#about-me'>Sobre mí</a></li>
-          <li><a onClick={handleShowNavbar} href='#skills'>Habilidades</a></li>
-          <li><a onClick={handleShowNavbar} href='#experience'>Experiencia</a></li>
-          <li><a onClick={handleShowNavbar} href='#projects'>Proyectos</a></li>
+          <li><a onClick={handleShowNavbar} href='#about-me'>{translations.navbar.first_option}</a></li>
+          <li><a onClick={handleShowNavbar} href='#skills'>{translations.navbar.second_option}</a></li>
+          <li><a onClick={handleShowNavbar} href='#experience'>{translations.navbar.third_option}</a></li>
+          <li><a onClick={handleShowNavbar} href='#projects'>{translations.navbar.fourth_option}</a></li>
+          <li><a onClick={toggleLanguage}>{translations.navbar.fifth_option}</a></li>
         </ul>
       </div>
       </div>

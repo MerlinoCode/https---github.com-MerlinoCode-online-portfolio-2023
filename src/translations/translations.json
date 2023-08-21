@@ -1,0 +1,142 @@
+{
+    "es": 
+    {
+        "navbar":
+        {
+            "first_option": "Sobre mi",
+            "second_option": "Habilidades",
+            "third_option": "Experiencia",
+            "fourth_option": "Proyectos",
+            "fifth_option": "Español  🇪🇸"
+        },
+        "presentation_card":
+        {
+            "salutation": "👋 ¡Hola! Mi nombre es",
+            "profession": "Desarrollador Frontend",
+            "short_description": "Entusiasta por la innovación y el diseño"
+        },
+        "about_me_section":
+        {
+            "paragraph":""
+        },
+        "skill_section":
+        {
+            "frontend": "FRONT END",
+            "design": "DISEÑO",
+            "others": "OTROS"
+        },
+        "experience_section":
+        {
+            "0":
+            {
+                "title": "Desarrollador Front End React",
+                "company_name": "Banco Galicia",
+                "job_description": "Estuve a cargo del mantenimiento de las secciones Home Banking y Refinanciaciones, utilizando Bricks, framework de uso exclusivo basado en React para el diseño y estructura de todas las aplicaciones web del Banco.",
+                "date": "Octubre/2022 - Marzo/2023 ( 6 meses )"
+            },
+            "1":
+            {
+                "title": "Desarrollador .NET Full Stack",
+                "company_name": "DevSpirit",
+                "job_description": "Como Freelance, he desarrollado y mantenido código para una aplicación web destinada a la gestión de datos de los alumnos y profesores de un instituto privado de educación secundaria a distancia. Colaboré cercanamente con otros desarrolladores para cumplir con los requisitos del cliente, y llevamos a cabo las reuniones con el mismo, recopilando detalladamente sus necesidades a fin de poder entregar un producto óptimo y eficiente.",
+                "date": "Diciembre/2021 - Septiembre/2022 ( 10 meses )"
+            },
+            "2":
+            {
+                "title": "Desarrollador .NET Full Stack",
+                "company_name": "Neps - Soluciones Informáticas",
+                "job_description": "En mi primer experiencia laboral como Freelance, participé en varios proyectos, utilizando principalmente ASP.NET 5.0. Mi mayor logro fue haber cambiado el código de barras de todas las facturas electrónicas a código QR generado automáticamente, teniendo en cuenta los requisitos impuestos por la AFIP, como también cambio de diseño en base a un nuevo logo de la empresa.",
+                "date": "Enero/2021 - Agosto/2021 ( 8 meses )"
+            }
+        },
+        "projects":
+        {
+            "0":
+            {
+                "title": "Proximamente...",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis temporibus illo fuga alias itaque impedit, illum odio quas dolorem obcaecati assumenda hic ratione minus voluptatibus nobis magnam nulla ducimus."
+            }
+        },
+        "footer":
+        {
+            "first_line": "Copyright 2023 ❤️ Jonathan Leonel Merlino",
+            "second_line": "Diseñado con Figma y codeado en Visual Studio Code. Construido con React y Vite.",
+            "third_line": "Texto usado fueron Poppins e Inter."
+        },
+        "miscellaneous":
+        {
+            "firework_title": "Volver al principio",
+            "external_link_title": "Link Externo"
+        }
+    },
+    "en": 
+    {
+        "navbar":
+        {
+            "first_option": "About me",
+            "second_option": "Skills",
+            "third_option": "Experience",
+            "fourth_option": "Projects",
+            "fifth_option":"English  🇬🇧"
+        },
+        "presentation_card":
+        {
+            "salutation": "👋 ¡Hello! My name is",
+            "profession": "Frontend Developer",
+            "short_description": "Eager for innovation and design"
+        },
+        "about_me_section":
+        {
+            "paragraph":""
+        },
+        "skill_section":
+        {
+            "frontend": "FRONT END",
+            "design": "DESIGN",
+            "others": "OTHERS"
+        },
+        "experience_section":
+        {
+            "0":
+            {
+                "title": "Front End React Developer",
+                "company_name": "Banco Galicia",
+                "job_description": "I was in charge of maintaining the Home Banking and Refinancing sections, using Bricks, a private framework for exclusive use based on React for the design and structure of all the Bank's web applications.",
+                "date": "October/2022 - March/2023 ( 6 months )"
+            },
+            "1":
+            {
+                "title": ".NET Full Stack Developer",
+                "company_name": "DevSpirit",
+                "job_description": "As a Freelancer, I have developed and maintained code for a web application aimed at managing the data of the students and teachers of a private institute for remote secondary education. I collaborated closely with other developers to meet the client's requirements, and we held meetings with the client, gathering their needs in detail in order to deliver an optimal and efficient product.",
+                "date": "December/2021 - September/2022 ( 10 months )"
+            },
+            "2":
+            {
+                "title": ".NET Full Stack Developer",
+                "company_name": "Neps - Soluciones Informáticas",
+                "job_description": "In my first work experience as a Freelancer, I participated in various projects, mainly using ASP.NET 5.0. My greatest achievement was having changed the barcode of all electronic invoices to a dynamically generated QR code, taking into account the requirements imposed by the AFIP, as well as a design change based on a new company logo.",
+                "date": "January/2021 - August/2021 ( 8 months )"
+            }
+        },
+        "projects":
+        {
+            "0":
+            {
+                "title": "Coming soon...",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis temporibus illo fuga alias itaque impedit, illum odio quas dolorem obcaecati assumenda hic ratione minus voluptatibus nobis magnam nulla ducimus."
+            }
+        },
+        "footer":
+        {
+            "first_line": "Copyright 2023 ❤️ Jonathan Leonel Merlino",
+            "second_line": "Designed with Figma and coded using Visual Studio Code. Build with React & Vite.",
+            "third_line": "Text used were Poppins & Inter."
+        },
+        "miscellaneous":
+        {
+            "firework_desc": "Go back to the beginning",
+            "external_link": "External Link"
+        }  
+    }
+}

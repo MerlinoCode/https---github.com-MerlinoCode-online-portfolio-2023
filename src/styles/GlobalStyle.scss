@@ -5,6 +5,7 @@ $Text: #E4E4E4;
 $Primary: #61fff7;
 $Secondary: #FC038C;
 $Accent: #31A8D1;
+$Gold: #e1c000;
 $Background-accent: #31a9d13f;
 $Background-Responsive-Menu: rgba(13, 13, 13, 0.97);
 
@@ -71,13 +72,17 @@ body {
     background-color: #574c4c;
     font-size: 100%;
 }
-.nav-elements ul li a {
+.nav-elements ul li a, .tech {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 .nav-elements ul li a:hover{
     color: $Primary;
     text-shadow: 0px 0px 40px $Primary;
+}
+.tech:hover{
+    color: $Primary;
+    text-shadow: 0px -40px 120px $Primary;
 }
 /*Presentation Card style*/
 .card{
@@ -225,7 +230,7 @@ body {
     border-left: 25px solid $Secondary;
 }
 .job-wrapper > :nth-child(3) { /*job-icon-section*/
-    background-image: url('../components/Arrow.svg'); 
+    background-image: url('../components/icons/Arrow.svg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
