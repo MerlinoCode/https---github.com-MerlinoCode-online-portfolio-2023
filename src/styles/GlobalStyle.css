@@ -343,6 +343,7 @@ footer {
 
 #firework {
   margin: 0 auto;
+  cursor: pointer;
   transform: rotate(-45deg);
 }
 

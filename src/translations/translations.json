@@ -59,8 +59,13 @@
         },
         "footer":
         {
-            "first_line": "Copyright 2023 ❤️ Jonathan Leonel Merlino",
-            "second_line": "Diseñado con Figma y codeado en Visual Studio Code. Construido con React y Vite.",
+            "first_line": "Copyright 2023 ❤️ Jonathan Leonel Merlino.",
+            "second_line":
+            {
+                "0": "Diseñado con ",
+                "1": " y codeado en ",
+                "2": ". Construido con "
+            },
             "third_line": "Texto usado fueron Poppins e Inter."
         },
         "miscellaneous":
@@ -129,8 +134,13 @@
         },
         "footer":
         {
-            "first_line": "Copyright 2023 ❤️ Jonathan Leonel Merlino",
-            "second_line": "Designed with Figma and coded using Visual Studio Code. Build with React & Vite.",
+            "first_line": "Copyright 2023 ❤️ Jonathan Leonel Merlino.",
+            "second_line":
+            {
+                "0": "Designed with ",
+                "1": " and coded using ",
+                "2": ". Built with "
+            },
             "third_line": "Text used were Poppins & Inter."
         },
         "miscellaneous":

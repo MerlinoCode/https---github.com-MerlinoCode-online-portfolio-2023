@@ -14,6 +14,12 @@ const Navbar = () => {
 
   const toggleLanguage = () => { setLanguage(language === 'es' ? 'en' : 'es'); };
 
+  const scrollToSection = (section) =>{
+    let selectedSection = document.getElementById(section);
+    const topOffset = selectedSection.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: topOffset, behavior: 'smooth' });
+  }
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -24,10 +30,10 @@ const Navbar = () => {
         </div>
       <div className={`nav-elements  ${showNavbar && 'active'}`}>
         <ul>
-          <li><a onClick={handleShowNavbar} href='#about-me'>{translations.navbar.first_option}</a></li>
-          <li><a onClick={handleShowNavbar} href='#skills'>{translations.navbar.second_option}</a></li>
-          <li><a onClick={handleShowNavbar} href='#experience'>{translations.navbar.third_option}</a></li>
-          <li><a onClick={handleShowNavbar} href='#projects'>{translations.navbar.fourth_option}</a></li>
+          <li><a onClick={() => { handleShowNavbar(); scrollToSection('about_me');}}>{translations.navbar.first_option}</a></li>
+          <li><a onClick={() => { handleShowNavbar(); scrollToSection('skills');}}>{translations.navbar.second_option}</a></li>
+          <li><a onClick={() => { handleShowNavbar(); scrollToSection('experience');}}>{translations.navbar.third_option}</a></li>
+          <li><a onClick={() => { handleShowNavbar(); scrollToSection('projects');}}>{translations.navbar.fourth_option}</a></li>
           <li><a onClick={toggleLanguage}>{translations.navbar.fifth_option}</a></li>
         </ul>
       </div>
