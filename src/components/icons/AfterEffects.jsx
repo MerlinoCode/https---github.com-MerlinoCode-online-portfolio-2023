@@ -3,7 +3,7 @@ import React from 'react'
 const AfterEffects = () => {
   return (
     <div className='tech'>
-      <a href='https://www.adobe.com/products/aftereffects.html' target='_blank'>
+      <a href='https://www.adobe.com/products/aftereffects.html' target='_blank' rel="noreferrer noopener">
         <svg width="116" height="99" viewBox="0 0 116 99" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <title>Adobe After Effects</title>
           <rect id="Adobe After Effects" x="0.5" width="115" height="99" fill="url(#pattern9)"/>

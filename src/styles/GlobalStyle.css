@@ -569,6 +569,9 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
   }
+  .about-me-wrapper p {
+    font-size: 13px;
+  }
   .about-me-wrapper p:first-child {
     grid-row-start: 2;
   }
@@ -630,6 +633,9 @@ footer {
   }
 }
 @media (max-width: 400px) {
+  .about-me-wrapper {
+    margin: 0 4.5rem 3rem 4.5rem;
+  }
   .icon-skills {
     margin: 0 8rem;
   }

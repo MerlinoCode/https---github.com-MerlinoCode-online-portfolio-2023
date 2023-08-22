@@ -3,7 +3,7 @@ import React from 'react'
 const Figma = () => {
   return (
     <div className="tech">
-      <a href='https://www.figma.com/' target='_blank'>
+      <a href='https://www.figma.com/' target='_blank' rel="noreferrer noopener">
         <svg width="116" height="99" viewBox="0 0 116 99" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <title>Figma</title>
           <desc>Figma is the leading collaborative design tool for building meaningful products. Seamlessly design, prototype, develop, and collect feedback in a single platform.</desc>

@@ -476,6 +476,9 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
     }
+    .about-me-wrapper p{
+        font-size: 13px;
+    }
     .about-me-wrapper p:first-child{ grid-row-start: 2; }
     .about-me-wrapper p:nth-child(2){ grid-row-start: 3; }
     .about-me-wrapper p:nth-child(3){ grid-row-start: 4; }
@@ -507,6 +510,7 @@ footer{
     .project-container{ margin: 0 1rem; }
 }
 @media(max-width: 400px){
+    .about-me-wrapper{ margin: 0 4.5rem 3rem 4.5rem; }
     .icon-skills{ margin: 0 8rem; }
     .job-section{ margin: 0 15% 3rem 15%; }
     .wrap-arrow{ margin: 0 0 0 17.3rem; }

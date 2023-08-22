@@ -3,7 +3,7 @@ import React from 'react'
 const JavascriptIcon = () => {
   return (
     <div className="tech">
-      <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>
+      <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank' rel="noreferrer noopener">
         <svg width="116" height="99" viewBox="0 0 116 99" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <title>Javascript</title>
           <rect id="JavaScript" x="0.5" width="115" height="99" fill="url(#pattern3)"/>
