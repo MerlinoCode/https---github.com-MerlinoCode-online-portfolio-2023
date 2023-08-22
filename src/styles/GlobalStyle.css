@@ -108,6 +108,7 @@ body::-webkit-scrollbar-track {
 }
 
 .flag {
+  display: flex;
   float: right;
   height: 20px;
   margin: 0 0 0 0.6rem;
@@ -463,6 +464,12 @@ footer {
     margin-right: unset;
     margin-top: 3rem;
     text-align: center;
+  }
+  .flag {
+    display: block;
+    float: none;
+    margin: 0.5rem auto;
+    width: 25px;
   }
   .card {
     margin: 3rem auto;
