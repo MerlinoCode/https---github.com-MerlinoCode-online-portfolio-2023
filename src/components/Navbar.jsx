@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Menu from './icons/Menu'
 import XCross from './icons/XCross'
 import { useLanguage } from '../context/LanguageContext';
+import Spain_Flag from './icons/Spain_Flag';
+import Great_Britain_Flag from './icons/Great_Britain_Flag';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -34,7 +36,7 @@ const Navbar = () => {
           <li><a onClick={() => { handleShowNavbar(); scrollToSection('skills');}}>{translations.navbar.second_option}</a></li>
           <li><a onClick={() => { handleShowNavbar(); scrollToSection('experience');}}>{translations.navbar.third_option}</a></li>
           <li><a onClick={() => { handleShowNavbar(); scrollToSection('projects');}}>{translations.navbar.fourth_option}</a></li>
-          <li><a onClick={toggleLanguage}>{translations.navbar.fifth_option}</a></li>
+          <li><a onClick={toggleLanguage}>{translations.navbar.fifth_option}{language=='es'? <Spain_Flag/> : <Great_Britain_Flag/>}</a></li>
         </ul>
       </div>
       </div>
