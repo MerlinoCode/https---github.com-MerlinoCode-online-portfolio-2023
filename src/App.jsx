@@ -1,3 +1,4 @@
+import AboutMeSection from './components/AboutMeSection'
 import Footer from './components/Footer'
 import JobSection from './components/JobSection'
 import Navbar from './components/Navbar'
@@ -16,6 +17,7 @@ const App = () => {
         <Navbar/>
         <PresentationCard/>
         <Separator id="about_me"/>
+        <AboutMeSection/>
         <Separator id="skills"/>
         <SkillSection title="frontend"/>
         <SkillSection title="design"/>

@@ -17,7 +17,11 @@
         },
         "about_me_section":
         {
-            "paragraph":""
+            "presentation":{
+                "0": "Nacido en Buenos Aires, Argentina, soy un desarrollador de páginas web apasionado por el diseño y el desarrollo a nivel front end.",
+                "1":  "Durante 2 años, he estado involucrado en el mantenimiento y desarrollo de aplicaciones web y siempre estoy abierto a seguir aprendiendo nuevos conceptos y lenguajes relacionados con el ámbito IT",
+                "2": "Actualmente aspiro a poder involucrarme profesionalmente en algún proyecto a largo plazo, con el fin de continuar con mi proceso creativo de crear aplicaciones web con interfaces de usuario atractivas y únicas."
+            }
         },
         "skill_section":
         {
@@ -92,7 +96,11 @@
         },
         "about_me_section":
         {
-            "paragraph":""
+            "presentation":{
+                "0": "Born in Buenos Aires, Argentina, I'm a web developer passionate about design and front end development.",
+                "1":  "For 2 years, I've been involved in the maintenance and development of web applications and I'm always open to continue learning new concepts and languages related to the IT field.",
+                "2": "Currently I aspire to be professionally involved in a long term project, in order to continue my creative process of creating web applications with attractive and unique user interfaces."
+            }
         },
         "skill_section":
         {

@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.navbar, hr, .icon-skills {
+.navbar, hr, .icon-skills, .about-me-wrapper {
   margin-bottom: 3rem;
 }
 
@@ -114,6 +114,41 @@ body::-webkit-scrollbar-track {
   margin: 0 0 0 0.6rem;
 }
 
+.about-me-wrapper {
+  background-color: rgba(13, 13, 13, 0.5);
+  display: grid;
+  margin: 0 5vw 3rem 5vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: row;
+  padding: 1rem;
+}
+
+.about-me-wrapper p {
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.about-me-wrapper p:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.about-me-wrapper p:nth-child(2) {
+  grid-column-start: 1;
+}
+
+.about-me-wrapper p:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+}
+
+.photography {
+  height: 160px;
+}
+
 .tech:hover {
   color: #61fff7;
   text-shadow: 0px -40px 120px #61fff7;
@@ -132,9 +167,8 @@ body::-webkit-scrollbar-track {
   border-style: solid;
   -o-border-image: linear-gradient(#61fff7 0%, #FC038C 100%) 30;
      border-image: linear-gradient(#61fff7 0%, #FC038C 100%) 30;
-  border-radius: 36px;
   background-origin: border-box;
-  background-clip: content-box, border-box;
+  background-color: rgba(13, 13, 13, 0.5);
   padding: 0 30px;
 }
 
@@ -310,6 +344,7 @@ body::-webkit-scrollbar-track {
 .job-experience {
   display: flex;
   padding: 1rem;
+  background-color: rgba(13, 13, 13, 0.5);
   align-items: flex-start;
   border-radius: 10px;
   border: 2px solid #FC038C;
@@ -399,6 +434,9 @@ footer {
   .card {
     margin: auto auto 3rem auto;
   }
+  .about-me-wrapper {
+    margin: 0 1rem 3rem 1rem;
+  }
   .separator-title {
     font-size: 38px;
   }
@@ -459,6 +497,7 @@ footer {
   .nav-elements ul {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   .nav-elements ul li {
     margin-right: unset;
@@ -525,6 +564,22 @@ footer {
 @media (max-width: 500px) {
   #githubcard, #codepencard, #linkedincard {
     height: 80px;
+  }
+  .about-me-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .about-me-wrapper p:first-child {
+    grid-row-start: 2;
+  }
+  .about-me-wrapper p:nth-child(2) {
+    grid-row-start: 3;
+  }
+  .about-me-wrapper p:nth-child(3) {
+    grid-row-start: 4;
+  }
+  .about-me-wrapper .photography {
+    grid-row-start: 1;
   }
   .icon-links {
     display: inline;

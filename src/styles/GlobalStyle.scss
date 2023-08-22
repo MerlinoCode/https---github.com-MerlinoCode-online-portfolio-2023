@@ -10,6 +10,7 @@ $Font-Stack-2: Inter, sans_serif;
 $Gold: #e1c000;
 $Background-accent: #31a9d13f;
 $Background-Responsive-Menu: rgba(13, 13, 13, 0.97);
+$Background-Transparent: rgba(13, 13, 13, 0.5);
 
 @mixin scrollbars($size, $primary-color, $secondary-color, $background-color: mix($foreground-color, white, 50%)) {
   // For Google Chrome
@@ -23,7 +24,7 @@ $Background-Responsive-Menu: rgba(13, 13, 13, 0.97);
     }
     &::-webkit-scrollbar-track {
         background:  $background-color
-      }      
+    }      
     overflow-y: scroll;
     //For Internet Explorer and Edge
     scrollbar-width: auto;
@@ -36,7 +37,7 @@ $Background-Responsive-Menu: rgba(13, 13, 13, 0.97);
 *::before {
     box-sizing: border-box;
 }
-.navbar, hr, .icon-skills{ margin-bottom: 3rem; }
+.navbar, hr, .icon-skills, .about-me-wrapper{ margin-bottom: 3rem; }
 hr {
     background: linear-gradient(to left, $Primary, $Secondary);
     height: 5px;
@@ -109,6 +110,36 @@ body {
     height: 20px;
     margin: 0 0 0 .6rem;
 }
+.about-me-wrapper{
+    background-color: $Background-Transparent;
+    display: grid;
+    margin: 0 5vw 3rem 5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: row;
+    padding: 1rem;
+}
+.about-me-wrapper p{
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.about-me-wrapper p:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.about-me-wrapper p:nth-child(2){
+    grid-column-start: 1;
+}
+.about-me-wrapper p:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+.photography{
+    height: 160px;
+
+}
 .tech:hover{
     color: $Primary;
     text-shadow: 0px -40px 120px $Primary;
@@ -128,9 +159,8 @@ body {
     linear-gradient(
         $Primary 0%, $Secondary 100%
     ) 30;
-    border-radius: 36px;
     background-origin: border-box;
-    background-clip: content-box, border-box;
+    background-color: $Background-Transparent;
     padding: 0 30px;
 }
 .card h1, h2 ,h3 ,h4 ,h5 { margin: 0 0; }
@@ -268,7 +298,7 @@ body {
     align-items: center;
     grid-column-start: 3;
     grid-column-end: 5;
-  }
+}
 .job-wrapper{ 
     display: grid;
     grid-template-columns: 7fr 25px 1fr 1fr;
@@ -279,6 +309,7 @@ body {
 .job-experience{
     display: flex;
     padding: 1rem;
+    background-color: $Background-Transparent;
     align-items: flex-start;
     border-radius: 10px;
     border: 2px solid $Secondary;
@@ -347,6 +378,7 @@ footer{
 }
 @media (max-width: 768px) {
     .card{ margin: auto auto 3rem auto; }
+    .about-me-wrapper{ margin: 0 1rem 3rem 1rem;}
     .separator-title{
         font-size: 38px;
     }
@@ -402,6 +434,7 @@ footer{
     .nav-elements ul {
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
     
     .nav-elements ul li {
@@ -439,6 +472,14 @@ footer{
 }
 @media(max-width: 500px) {
     #githubcard, #codepencard, #linkedincard{ height: 80px; }
+    .about-me-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    .about-me-wrapper p:first-child{ grid-row-start: 2; }
+    .about-me-wrapper p:nth-child(2){ grid-row-start: 3; }
+    .about-me-wrapper p:nth-child(3){ grid-row-start: 4; }
+    .about-me-wrapper .photography{ grid-row-start: 1;}
     .icon-links{
         display: inline;
         gap: 20px;
