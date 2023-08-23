@@ -12,7 +12,7 @@ const PresentationCard = () => {
         <h1>Jonathan Leonel Merlino</h1>
         <h3>{translations.presentation_card.profession}</h3>
         <h4>{translations.presentation_card.short_description}</h4>
-        <div className='icon-links' alt="Icons by Icons8">
+        <div className='icon-links'>
           <a href='https://github.com/MerlinoCode' target='_blank' rel="noreferrer noopener">
             <GithubCard/>
           </a>

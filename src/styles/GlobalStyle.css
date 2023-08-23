@@ -118,8 +118,8 @@ body::-webkit-scrollbar-track {
   background-color: rgba(13, 13, 13, 0.5);
   display: grid;
   margin: 0 5vw 3rem 5vw;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-auto-flow: row;
   padding: 1rem;
 }
@@ -131,22 +131,15 @@ body::-webkit-scrollbar-track {
 }
 
 .about-me-wrapper p:first-child {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-row-start: 2;
 }
 
 .about-me-wrapper p:nth-child(2) {
-  grid-column-start: 1;
-}
-
-.about-me-wrapper p:nth-child(3) {
-  grid-column-start: 1;
-  grid-column-end: 3;
   grid-row-start: 3;
 }
 
-.photography {
-  height: 160px;
+.about-me-wrapper p:nth-child(3) {
+  grid-row-start: 4;
 }
 
 .tech:hover {
@@ -565,24 +558,8 @@ footer {
   #githubcard, #codepencard, #linkedincard {
     height: 80px;
   }
-  .about-me-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-  }
   .about-me-wrapper p {
     font-size: 13px;
-  }
-  .about-me-wrapper p:first-child {
-    grid-row-start: 2;
-  }
-  .about-me-wrapper p:nth-child(2) {
-    grid-row-start: 3;
-  }
-  .about-me-wrapper p:nth-child(3) {
-    grid-row-start: 4;
-  }
-  .about-me-wrapper .photography {
-    grid-row-start: 1;
   }
   .icon-links {
     display: inline;
