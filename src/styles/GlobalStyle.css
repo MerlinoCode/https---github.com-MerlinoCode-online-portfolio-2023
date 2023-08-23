@@ -142,6 +142,15 @@ body::-webkit-scrollbar-track {
   grid-row-start: 4;
 }
 
+.about-me-wrapper .photography {
+  grid-row-start: 1;
+  background-image: url("./images/photography.png");
+  background-size: cover;
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .tech:hover {
   color: #61fff7;
   text-shadow: 0px -40px 120px #61fff7;
