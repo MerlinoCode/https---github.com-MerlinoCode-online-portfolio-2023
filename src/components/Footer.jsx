@@ -13,8 +13,6 @@ const Footer = () => {
         {translations.footer.second_line[0]} 
         <a href='https://www.figma.com/' target='_blank' rel="noreferrer noopener">Figma</a>
         {translations.footer.second_line[1]} 
-        <a href='https://code.visualstudio.com/' target='_blank' rel="noreferrer noopener">Visual Studio Code</a>
-        {translations.footer.second_line[2]} 
         <a href='https://react.dev/' target='_blank' rel="noreferrer noopener">React</a> &
         <a href='https://vitejs.dev/' target='_blank' rel="noreferrer noopener"> Vite</a>
         </p>

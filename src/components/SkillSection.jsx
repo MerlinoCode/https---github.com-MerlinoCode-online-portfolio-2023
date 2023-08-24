@@ -14,6 +14,8 @@ import Scrum from './icons/Scrum'
 import VisualStudioCode from './icons/VisualStudioCode'
 import GreatBritain from './icons/GreatBritain'
 import { useLanguage } from '../context/LanguageContext';
+import TypeScript from './icons/TypeScript'
+import NodeJs from './icons/NodeJs'
 
 const SkillSection = (props) => {
   const {translations} = useLanguage();
@@ -41,6 +43,7 @@ const SkillSection = (props) => {
                     <Html5/>
                     <Css3/>
                     <JavascriptIcon/>
+                    <TypeScript/>
                     <ReactIcon/>
                     <Sass/>
                     <Bootstrap/>
@@ -55,6 +58,7 @@ const SkillSection = (props) => {
             return <div className='icon-skills'>
                       <Git/>
                       <MicrosoftSqlServer/>
+                      <NodeJs/>
                       <Scrum/>
                       <VisualStudioCode/>
                       <GreatBritain/>

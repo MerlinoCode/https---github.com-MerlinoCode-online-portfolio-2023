@@ -148,7 +148,7 @@ body::-webkit-scrollbar-track {
   background-size: cover;
   height: 280px;
   width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
 }
 
 .tech:hover {
@@ -431,6 +431,12 @@ footer {
     max-width: max-content;
     grid-template-columns: auto 3fr 1fr auto;
   }
+  .icon-skills {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 6em;
+  }
 }
 @media (max-width: 768px) {
   .card {
@@ -446,7 +452,6 @@ footer {
     max-width: 90vw;
   }
   .icon-skills {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 6em;
   }

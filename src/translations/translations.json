@@ -58,7 +58,7 @@
             "0":
             {
                 "title": "Proximamente...",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis temporibus illo fuga alias itaque impedit, illum odio quas dolorem obcaecati assumenda hic ratione minus voluptatibus nobis magnam nulla ducimus."
+                "description": "La aplicación web ofrece información detallada sobre una atracción turística con temática pokemon. Permite al usuario ordenar, filtrar y mostrar información acerca de los diferentes tipos de Pokémon de la API."
             }
         },
         "footer":
@@ -67,8 +67,7 @@
             "second_line":
             {
                 "0": "Diseñado con ",
-                "1": " y codeado en ",
-                "2": ". Construido con "
+                "1": ". Construido con "
             },
             "third_line": "Texto usado fueron Poppins e Inter."
         },
@@ -137,7 +136,7 @@
             "0":
             {
                 "title": "Coming soon...",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis temporibus illo fuga alias itaque impedit, illum odio quas dolorem obcaecati assumenda hic ratione minus voluptatibus nobis magnam nulla ducimus."
+                "description": "The web application provides detailed information about a Pokemon-themed tourist attraction. It allows the user to sort, filter and display information about the different types of Pokémon in the API."
             }
         },
         "footer":
@@ -146,8 +145,7 @@
             "second_line":
             {
                 "0": "Designed with ",
-                "1": " and coded using ",
-                "2": ". Built with "
+                "1": ". Built with "
             },
             "third_line": "Text used were Poppins & Inter."
         },
