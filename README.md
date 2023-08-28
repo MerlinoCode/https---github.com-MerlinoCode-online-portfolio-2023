@@ -5,6 +5,7 @@
   https://portfolio-merlinocode.vercel.app
 </h1>
 <p align="center">Version 1.0</p>
+
 ![demo](https://github.com/MerlinoCode/portfolio/blob/8d7d96a902b691c24b7c74f5974aef8af9a39279/thumbnail.png)
 
 ## 🛠️ Tools & Languajes
