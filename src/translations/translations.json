@@ -21,6 +21,13 @@
                 "0": "Nacido en Buenos Aires, Argentina, soy un desarrollador de páginas web apasionado por el diseño y el desarrollo a nivel front end.",
                 "1":  "Durante 2 años, he estado involucrado en el mantenimiento y desarrollo de aplicaciones web y siempre estoy abierto a seguir aprendiendo nuevos conceptos y lenguajes relacionados con el ámbito IT",
                 "2": "Actualmente aspiro a poder involucrarme profesionalmente en algún proyecto a largo plazo, con el fin de continuar con mi proceso creativo de crear aplicaciones web con interfaces de usuario atractivas y únicas."
+            },
+            "contact":{
+                "0": "Ponerse en contacto",
+                "1": "💡 Tienes un proyecto o alguna idea que necesite una página web?",
+                "2": "⭐ Puedo ayudarte con ello.",
+                "3": "📧 No dudes en enviarme un mail!",
+                "button_text": "Enviar mensaje"
             }
         },
         "skill_section":
@@ -73,7 +80,7 @@
         },
         "miscellaneous":
         {
-            "firework_title": "Volver al principio",
+            "main_logo_title": "Volver al principio",
             "external_link_title": "Link Externo"
         }
     },
@@ -99,6 +106,13 @@
                 "0": "Born in Buenos Aires, Argentina, I'm a web developer passionate about design and front end development.",
                 "1":  "For 2 years, I've been involved in the maintenance and development of web applications and I'm always open to continue learning new concepts and languages related to the IT field.",
                 "2": "Currently I aspire to be professionally involved in a long term project, in order to continue my creative process of creating web applications with attractive and unique user interfaces."
+            },
+            "contact":{
+                "0": "Get In Touch",
+                "1": "💡 Do you have a project or a great idea in need of a webpage?",
+                "2": "⭐ I can help you with that.",
+                "3": "📧 Feel free to send me an email!",
+                "button_text": "Send message"
             }
         },
         "skill_section":
@@ -151,7 +165,7 @@
         },
         "miscellaneous":
         {
-            "firework_desc": "Go back to the beginning",
+            "main_logo_desc": "Go back to the beginning",
             "external_link": "External Link"
         }  
     }

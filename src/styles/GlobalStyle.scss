@@ -111,7 +111,6 @@ body {
     margin: 0 0 0 .6rem;
 }
 .about-me-wrapper{
-    background-color: $Background-Transparent;
     display: grid;
     margin: 0 5vw 3rem 5vw;
     grid-template-columns: 1fr;
@@ -124,9 +123,9 @@ body {
     font-size: 1rem;
     font-weight: 400;
 }
-.about-me-wrapper p:first-child{ grid-row-start: 2; }
-.about-me-wrapper p:nth-child(2){ grid-row-start: 3; }
-.about-me-wrapper p:nth-child(3){ grid-row-start: 4; }
+.about-me-wrapper p:nth-child(2){ grid-row-start: 2; }
+.about-me-wrapper p:nth-child(3){ grid-row-start: 3; }
+.about-me-wrapper p:nth-child(4){ grid-row-start: 4; }
 .about-me-wrapper .photography{ 
     grid-row-start: 1;
     background-image: url('./images/photography.png'); 
@@ -134,7 +133,29 @@ body {
     height: 280px;
     width: 280px;
     margin: 0 auto 3rem auto;
-
+}
+.contact{ margin: 1.5rem auto auto auto}
+.contact h2{ 
+    font-family: $Font-Stack-2; 
+    font-weight:600; 
+    line-height: 3rem; 
+}
+.contact hr{ width: 20%; margin-bottom: 2rem;}
+.about-me-wrapper .contact, .about-me-wrapper .contact p{ text-align: center; }
+.mail-link{
+    border: 1px solid $Primary;
+    font-family: $Font-Stack-2;
+    font-weight: 600;
+    border-radius: 4px;
+    color: $Primary;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.mail-link:hover{
+    color: $Text;
+    background-color: $Secondary;
+    border: 1px solid $Secondary;
 }
 .tech:hover{
     color: $Primary;
@@ -271,7 +292,7 @@ body {
 }
 .job-section{
     max-width: 75vw;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     display: grid;
     grid-template-columns: 5vw 3fr 1fr 5vw;
     grid-auto-flow: row;
@@ -311,14 +332,12 @@ body {
     border: 2px solid $Secondary;
     margin: 3rem 0 0 0;
 }
-.project-wrapper{
-    display: flex;
-}
+.project-wrapper{ display: flex; }
 .project-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
     max-width: 60vw;
     border-radius: 15px;
     position: relative;
@@ -326,32 +345,29 @@ body {
     background-color: $Background-accent;
 }
 .project-title{ color: $Primary;}
-.project-description{
-    word-wrap: break-word;
-}
+.project-description{ word-wrap: break-word; }
 .project-links{
     gap: 3rem;
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-rows: 1fr;
 }
+.project-links a{ grid-row-start: 2; }
+.right-part{ margin: 0 auto; }
 #project-preview{
     height: auto;
     max-width: 100%;
 }
 footer{
-    margin: 6rem 0 0 0;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.firework-link{
-    margin: 0 auto;
-    width: 3.5rem;
-}
 #firework{
     margin: 0 auto;
     cursor: pointer;
-    transform: rotate(-45deg);
+    height: 6rem;
+    width: 6rem;
 }
 .footer-text{
     font-weight: 200;
@@ -365,9 +381,7 @@ footer{
 .footer-text a:hover{ color: $Primary; }
 
 @media (max-width:1080px) {
-    .project-container{
-        max-width: fit-content;
-    }
+    .project-container{ max-width: fit-content; }
     .job-section{
         max-width: max-content;
         grid-template-columns: auto 3fr 1fr auto;
@@ -382,22 +396,17 @@ footer{
 @media (max-width: 768px) {
     .card{ margin: auto auto 3rem auto; }
     .about-me-wrapper{ margin: 0 1rem 3rem 1rem;}
-    .separator-title{
-        font-size: 38px;
-    }
-    hr{
-        max-width: 90vw;
-    }
+    .separator-title{ font-size: 38px; }
+    hr{ max-width: 90vw; }
     .icon-skills{
         grid-template-columns: repeat(3, 1fr);
         margin: 0 6em;
     }
     .project-container{
-        margin: 0 3rem;
+        margin: 0 1rem 3rem 1rem;
         grid-template-columns: none;
         grid-template-rows: repeat(2,1fr);
     }
-    .right-part{ margin: 0 auto; }
     .job-experience-arrow{
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
@@ -407,9 +416,7 @@ footer{
     .company-logo-svg{ height: 80px; }
 }
 @media (max-width: 600px) {
-    body{
-        padding: initial;
-    }
+    body{ padding: initial; }
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -430,9 +437,7 @@ footer{
         width: 100%;
         z-index: 2;
     }
-    .nav-elements ul a {
-        font-size: 20px;
-    }
+    .nav-elements ul a { font-size: 20px; }
     .nav-elements ul {
         display: flex;
         flex-direction: column;
@@ -467,9 +472,9 @@ footer{
     .company-logo-svg{ height: 75px; }
     #arrow { width: 18px; }
     .job-section { margin: 0 1.5rem 3rem 1.5rem; }
-    footer{ margin: 0 22%; }
+    footer{ margin: 0 15%; }
     .footer-text { font-size: 12px;}
-    .project-container{ margin: 0 6rem; }
+    .project-container{ margin: 0 4rem 3rem 4rem; }
 
 }
 @media(max-width: 500px) {
@@ -501,7 +506,8 @@ footer{
     .job-experience { padding: .4rem; }
     .job-experience h1 { font-size: 14px; }
     .job-experience h2 { font-size: 13px; }
-    .project-container{ margin: 0 1rem; }
+    .project-container{ margin: 0 1.5rem 3rem 1.5rem; }
+    .project-description{ font-size: 14px; }
 }
 @media(max-width: 400px){
     .about-me-wrapper{ margin: 0 4.5rem 3rem 4.5rem; }
@@ -515,5 +521,5 @@ footer{
     .card h1{ font-size: 21px; }
     .card h4{ font-size: 14px; }
     #githubcard, #linkedincard, #codepencard { height: 70px; }
-    .project-container{ margin: 0 4rem; }
+    .project-container{ margin: 0 5rem 3rem 5rem; }
 }
