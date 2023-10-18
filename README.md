@@ -23,9 +23,9 @@ This project was made using the following ones:
 
 ## 🎨 Color Reference
 
-Color | Name | Hexadecimal
-:---: | :--- | :---
-![#E4E4E4](https://placehold.co/10x10/E4E4E4/E4E4E4.png) | <kbd>Platinum</kbd>   |  <b>#E4E4E4</b>
-![#61fff7](https://placehold.co/10x10/61fff7/61fff7.png) | <kbd>Electrical Blue</kbd>   |  <b>#61FFF7</b>
-![#FC038C](https://placehold.co/10x10/FC038C/FC038C.png) | <kbd>Magenta (Process)</kbd> | <b>#FC038C</b>
-![#31A8D1](https://placehold.co/10x10/31A8D1/31A8D1.png) | <kbd>Ball Blue</kbd>         | <b>#31A8D1</b>
+Color | Name | Hexadecimal | RGB
+:---: | :--- | :--- | :---
+![#E4E4E4](https://placehold.co/10x10/E4E4E4/E4E4E4.png) | <kbd>Platinum</kbd>   |  <b>#E4E4E4</b> | 228, 228, 228
+![#61fff7](https://placehold.co/10x10/61fff7/61fff7.png) | <kbd>Electrical Blue</kbd>   |  <b>#61FFF7</b> | 97, 255, 247
+![#FC038C](https://placehold.co/10x10/FC038C/FC038C.png) | <kbd>Magenta (Process)</kbd> | <b>#FC038C</b> | 252, 3, 140
+![#31A8D1](https://placehold.co/10x10/31A8D1/31A8D1.png) | <kbd>Ball Blue</kbd>         | <b>#31A8D1</b> | 49, 169, 209
