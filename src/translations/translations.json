@@ -3,11 +3,11 @@
     {
         "navbar":
         {
-            "first_option": "Sobre mi",
-            "second_option": "Habilidades",
-            "third_option": "Experiencia",
-            "fourth_option": "Proyectos",
-            "fifth_option": "Español"
+            "first_option": "SOBRE MI",
+            "second_option": "HABILIDADES",
+            "third_option": "EXPERIENCIA",
+            "fourth_option": "PROYECTOS",
+            "fifth_option": "ESPAÑOL"
         },
         "presentation_card":
         {
@@ -32,9 +32,9 @@
         },
         "skill_section":
         {
-            "frontend": "FRONT END",
-            "design": "DISEÑO",
-            "others": "OTROS"
+            "frontend": "Front End",
+            "design": "Diseño",
+            "others": "Otros"
         },
         "experience_section":
         {
@@ -88,11 +88,11 @@
     {
         "navbar":
         {
-            "first_option": "About me",
-            "second_option": "Skills",
-            "third_option": "Experience",
-            "fourth_option": "Projects",
-            "fifth_option":"English"
+            "first_option": "ABOUT ME",
+            "second_option": "SKILLS",
+            "third_option": "EXPERIENCE",
+            "fourth_option": "PROJECTS",
+            "fifth_option":"ENGLISH"
         },
         "presentation_card":
         {
@@ -117,9 +117,9 @@
         },
         "skill_section":
         {
-            "frontend": "FRONT END",
-            "design": "DESIGN",
-            "others": "OTHERS"
+            "frontend": "Front End",
+            "design": "Design",
+            "others": "Others"
         },
         "experience_section":
         {

@@ -8,10 +8,10 @@ const PresentationCard = () => {
   const {translations} = useLanguage();
   return (
     <article className='card'>
-        <h5>{translations.presentation_card.salutation}</h5>
-        <h1>Jonathan Leonel Merlino</h1>
-        <h3>{translations.presentation_card.profession}</h3>
-        <h4>{translations.presentation_card.short_description}</h4>
+        <h2>{translations.presentation_card.salutation}</h2>
+        <h3>Jonathan Leonel Merlino</h3>
+        <h4>{translations.presentation_card.profession}</h4>
+        <h5>{translations.presentation_card.short_description}</h5>
         <div className='icon-links'>
           <a href='https://github.com/MerlinoCode' target='_blank' rel="noreferrer noopener">
             <GithubCard/>

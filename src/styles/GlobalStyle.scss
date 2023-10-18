@@ -181,27 +181,27 @@ body {
     padding: 0 30px;
 }
 .card h1, h2 ,h3 ,h4 ,h5 { margin: 0 0; }
-.card h1 {
+.card h2{
+    color: $Text;
+    font-size: 32px;
+    font-weight: 500;
+}
+.card h3 {
     font-size: 36px;
     font-weight: bold;
     background: -webkit-linear-gradient(0deg, $Primary 0%, $Secondary 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.card h3{
+.card h4{
     color: $Primary;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
 }
 .card h5{
     color: $Accent;
     font-size: 20px;
     font-weight: 300;
-}
-.card h4{
-    color: $Text;
-    font-size: 20px;
-    font-weight: 400;
 }
 .icon-links{
     display: flex;
@@ -217,11 +217,12 @@ body {
 }
 .separator-title{
     font-size: 44px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .sub-title{
+    color: $Primary;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: bold;
 }
 .separator-title, .sub-title{
     margin: 0 auto;
