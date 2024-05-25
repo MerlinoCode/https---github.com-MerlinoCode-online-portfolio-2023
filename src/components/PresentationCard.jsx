@@ -1,7 +1,6 @@
 import React from 'react'
 import GithubCard from './icons/GithubCard'
 import LinkedinCard from './icons/LinkedinCard'
-import CodepenCard from './icons/CodepenCard'
 import { useLanguage } from '../context/LanguageContext';
 
 const PresentationCard = () => {
@@ -15,12 +14,11 @@ const PresentationCard = () => {
         <div className='icon-links'>
           <a href='https://github.com/MerlinoCode' target='_blank' rel="noreferrer noopener">
             <GithubCard/>
+            <p>Github</p>
           </a>
           <a href='https://www.linkedin.com/in/jonathan-merlino/' target='_blank' rel="noreferrer noopener">
             <LinkedinCard/>
-          </a>
-          <a href='https://codepen.io/MerlinoCode' target='_blank' rel="noreferrer noopener">
-            <CodepenCard/>
+            <p>Linkedin</p>
           </a>
         </div>
     </article>

@@ -196,7 +196,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   text-align: center;
   margin: 3rem;
-  height: 20rem;
+  height: 21rem;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
@@ -246,6 +246,15 @@ body::-webkit-scrollbar-track {
   margin: 0 auto;
   position: relative;
   top: 12px;
+}
+
+.icon-links a {
+  text-decoration: none;
+  color: #FC038C;
+}
+
+.icon-links a p {
+  margin: 0 0;
 }
 
 /*Separator styles*/
@@ -556,7 +565,7 @@ footer {
   }
   .card {
     margin: 3rem auto;
-    height: 20rem;
+    height: 21rem;
     max-width: 90vw;
   }
   .card h1 {

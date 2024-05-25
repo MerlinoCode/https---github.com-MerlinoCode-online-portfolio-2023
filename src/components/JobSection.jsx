@@ -4,19 +4,27 @@ import BancoGaliciaLogo from './icons/BancoGaliciaLogo'
 import NepsLogo from './icons/NepsLogo'
 import DevSpirit from './icons/DevSpirit'
 import { useLanguage } from '../context/LanguageContext';
+import ValueLabs from './icons/ValueLabs'
 
 const JobSection = () => {
   const {translations} = useLanguage();
   return (
     <div className='job-section'>
         <JobExperience 
-          jobTitle={translations.experience_section[0].title}
-          jobCompany={translations.experience_section[0].company_name}
-          jobDescription={translations.experience_section[0].job_description}
-          jobDate={translations.experience_section[0].date}
-          jobIcon = {<BancoGaliciaLogo/>}
+          jobTitle={translations.experience_section[3].title}
+          jobCompany={translations.experience_section[3].company_name}
+          jobDescription={translations.experience_section[3].job_description}
+          jobDate={translations.experience_section[3].date}
+          jobIcon = {<ValueLabs/>}
           />
         <JobExperience 
+          jobTitle={translations.experience_section[2].title}
+          jobCompany={translations.experience_section[2].company_name}
+          jobDescription={translations.experience_section[2].job_description}
+          jobDate={translations.experience_section[2].date}
+          jobIcon = {<BancoGaliciaLogo/>}
+          />
+          <JobExperience 
           jobTitle={translations.experience_section[1].title}
           jobCompany={translations.experience_section[1].company_name}
           jobDescription={translations.experience_section[1].job_description}
@@ -24,10 +32,10 @@ const JobSection = () => {
           jobIcon = {<DevSpirit/>}
           />
           <JobExperience 
-          jobTitle={translations.experience_section[2].title}
-          jobCompany={translations.experience_section[2].company_name}
-          jobDescription={translations.experience_section[2].job_description}
-          jobDate={translations.experience_section[2].date}
+          jobTitle={translations.experience_section[0].title}
+          jobCompany={translations.experience_section[0].company_name}
+          jobDescription={translations.experience_section[0].job_description}
+          jobDate={translations.experience_section[0].date}
           jobIcon = {<NepsLogo/>}
           />
           <div className='column-icons'>

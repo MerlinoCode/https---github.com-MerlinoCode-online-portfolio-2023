@@ -40,10 +40,10 @@
         {
             "0":
             {
-                "title": "Desarrollador Front End React",
-                "company_name": "Banco Galicia",
-                "job_description": "Estuve a cargo del mantenimiento de las secciones Home Banking y Refinanciaciones, utilizando Bricks, framework de uso exclusivo basado en React para el diseño y estructura de todas las aplicaciones web del Banco.",
-                "date": "Octubre/2022 - Marzo/2023 ( 6 meses )"
+                "title": "Desarrollador .NET Full Stack",
+                "company_name": "Neps - Soluciones Informáticas",
+                "job_description": "En mi primer experiencia laboral como Freelance, participé en varios proyectos, utilizando principalmente ASP.NET 5.0. Mi mayor logro fue haber cambiado el código de barras de todas las facturas electrónicas a código QR generado automáticamente, teniendo en cuenta los requisitos impuestos por la AFIP, como también cambio de diseño en base a un nuevo logo de la empresa.",
+                "date": "Enero/2021 - Agosto/2021 ( 8 meses )"
             },
             "1":
             {
@@ -54,10 +54,17 @@
             },
             "2":
             {
-                "title": "Desarrollador .NET Full Stack",
-                "company_name": "Neps - Soluciones Informáticas",
-                "job_description": "En mi primer experiencia laboral como Freelance, participé en varios proyectos, utilizando principalmente ASP.NET 5.0. Mi mayor logro fue haber cambiado el código de barras de todas las facturas electrónicas a código QR generado automáticamente, teniendo en cuenta los requisitos impuestos por la AFIP, como también cambio de diseño en base a un nuevo logo de la empresa.",
-                "date": "Enero/2021 - Agosto/2021 ( 8 meses )"
+                "title": "Desarrollador Front End React",
+                "company_name": "Banco Galicia",
+                "job_description": "Estuve a cargo del mantenimiento de las secciones Home Banking y Refinanciaciones, utilizando Bricks, framework de uso exclusivo basado en React para el diseño y estructura de todas las aplicaciones web del Banco.",
+                "date": "Octubre/2022 - Marzo/2023 ( 6 meses )"
+            },
+            "3":
+            {
+                "title": "Ingeniero de Software Jr",
+                "company_name": "ValueLabs",
+                "job_description": "Mis responsabilidades fueron las de crear y actualizar documentación online del cliente en su plataforma de Confluence, cooperar con equipos de desarrollo a fin de solucionar los tickets creados por el usuario como también realizar un informe diario del estado de cada uno de los mismos. Por último haber podido contribuir con los Deployments del cliente realizando Smoke Testing.",
+                "date": "Noviembre/2023 - Mayo/2024 ( 7 meses )"
             }
         },
         "projects":
@@ -70,7 +77,11 @@
         },
         "footer":
         {
-            "first_line": "Copyright 2023 ❤️ Jonathan Leonel Merlino.",
+            "first_line":
+            {
+                "0": "Copyright ",
+                "1": " ❤️ Jonathan Leonel Merlino."
+            },
             "second_line":
             {
                 "0": "Diseñado con ",
@@ -125,10 +136,10 @@
         {
             "0":
             {
-                "title": "Front End React Developer",
-                "company_name": "Banco Galicia",
-                "job_description": "I was in charge of maintaining the Home Banking and Refinancing sections, using Bricks, a private framework for exclusive use based on React for the design and structure of all the Bank's web applications.",
-                "date": "October/2022 - March/2023 ( 6 months )"
+                "title": ".NET Full Stack Developer",
+                "company_name": "Neps - Soluciones Informáticas",
+                "job_description": "In my first work experience as a Freelancer, I participated in various projects, mainly using ASP.NET 5.0. My greatest achievement was having changed the barcode of all electronic invoices to a dynamically generated QR code, taking into account the requirements imposed by the AFIP, as well as a design change based on a new company logo.",
+                "date": "January/2021 - August/2021 ( 8 months )"
             },
             "1":
             {
@@ -139,10 +150,17 @@
             },
             "2":
             {
-                "title": ".NET Full Stack Developer",
-                "company_name": "Neps - Soluciones Informáticas",
-                "job_description": "In my first work experience as a Freelancer, I participated in various projects, mainly using ASP.NET 5.0. My greatest achievement was having changed the barcode of all electronic invoices to a dynamically generated QR code, taking into account the requirements imposed by the AFIP, as well as a design change based on a new company logo.",
-                "date": "January/2021 - August/2021 ( 8 months )"
+                "title": "Front End React Developer",
+                "company_name": "Banco Galicia",
+                "job_description": "I was in charge of maintaining the Home Banking and Refinancing sections, using Bricks, a private framework for exclusive use based on React for the design and structure of all the Bank's web applications.",
+                "date": "October/2022 - March/2023 ( 6 months )"
+            },
+            "3":
+            {
+                "title": "Jr Software Engineer",
+                "company_name": "ValueLabs",
+                "job_description": "My responsibilities were to create and update the client's online documentation in their Confluence platform, cooperate with development teams in order to solve the tickets created by the user as well as to make a daily report of the status of each one of them. Finally, I was able to contribute to the client's Deployments by performing Smoke Testing.",
+                "date": "November/2023 - May/2024 ( 7 months )"
             }
         },
         "projects":
@@ -155,7 +173,11 @@
         },
         "footer":
         {
-            "first_line": "Copyright 2023 ❤️ Jonathan Leonel Merlino.",
+            "first_line":
+            {
+                "0": "Copyright ",
+                "1": " ❤️ Jonathan Leonel Merlino."
+            },
             "second_line":
             {
                 "0": "Designed with ",

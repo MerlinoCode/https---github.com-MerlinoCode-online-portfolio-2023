@@ -1,6 +1,6 @@
 import React from 'react'
 
-const JavascriptIcon = () => {
+const Javascript = () => {
   return (
     <div className="tech">
       <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank' rel="noreferrer noopener">
@@ -20,4 +20,4 @@ const JavascriptIcon = () => {
   )
 }
 
-export default JavascriptIcon
+export default Javascript
