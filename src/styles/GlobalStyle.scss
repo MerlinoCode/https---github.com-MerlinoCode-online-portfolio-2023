@@ -75,6 +75,7 @@ body {
 }
 .nav-elements ul li{
     margin-right: 2rem;
+    text-align: center;
 }
 .nav-elements ul a {
     font-size: 16px;
@@ -263,6 +264,9 @@ body {
 #arrow{ 
     width: 20px;
 }
+#experience{
+    margin-top: 2rem;
+}
 
 .job-experience h1{
     color: $Primary;
@@ -389,6 +393,7 @@ footer{
 .footer-text a:hover{ color: $Primary; }
 
 @media (max-width:1080px) {
+    .container{ padding: 0;}
     .project-container{ max-width: fit-content; }
     .job-section{
         max-width: max-content;
@@ -402,7 +407,7 @@ footer{
     }
 }
 @media (max-width: 768px) {
-    .card{ margin: auto auto 3rem auto; }
+    .card{margin: 3rem 3rem 3rem 0rem;}
     .about-me-wrapper{ margin: 0 1rem 3rem 1rem;}
     .separator-title{ font-size: 38px; }
     hr{ max-width: 90vw; }
@@ -420,7 +425,16 @@ footer{
         border-bottom: 15px solid transparent;
         border-left: 15px solid $Secondary;
     }
-    .job-wrapper{ grid-template-columns: 7fr 15px auto auto; }
+    .job-section{ 
+        max-width: none; 
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    .job-wrapper{ 
+        grid-template-columns: 100%;
+        grid-column-end: 2;
+        padding: 0 1.1rem;
+    }
     .company-logo-svg{ height: 80px; }
 }
 @media (max-width: 600px) {
@@ -479,7 +493,7 @@ footer{
     .job-experience p { font-size: 11px; }
     .company-logo-svg{ height: 75px; }
     #arrow { width: 18px; }
-    .job-section { margin: 0 1.5rem 3rem 1.5rem; }
+    //.job-section { margin: 0 1.5rem 3rem 1.5rem; }
     footer{ margin: 0 15%; }
     .footer-text { font-size: 12px;}
     .project-container{ margin: 0 4rem 3rem 4rem; }
@@ -490,43 +504,58 @@ footer{
         font-size: 13px;
     }
     .icon-links{
-        display: inline;
-        gap: 20px;
+        gap: 1.2rem;
     }
     .card{
         text-align: center;
-        height: 18rem;
-        padding: 0 15px;
+        height: auto;
+        padding: 1rem;
     }
-    .card h5{ font-size: 15px; }
     .card h1{ font-size: 23px; }
     .card h3{ font-size: 19px; }
+    .card h5{ font-size: 15px; }
     .icon-skills{ grid-template-columns: repeat(2, 1fr); }
     .tech{
         width: auto;
         text-align: center;
         display: inline;
     }
-    .job-section { margin: 0 .5rem 3rem .5rem; }
+    //.job-section { margin: 0 .5rem 3rem .5rem; }
     .wrap-arrow { margin: 0 0 0 20.3rem; }
     #arrow { width: 22px;}
     .job-experience { padding: .4rem; }
     .job-experience h1 { font-size: 14px; }
     .job-experience h2 { font-size: 13px; }
+    .job-experience h4 { font-weight: 100;}
     .project-container{ margin: 0 1.5rem 3rem 1.5rem; }
     .project-description{ font-size: 14px; }
 }
 @media(max-width: 400px){
     .about-me-wrapper{ margin: 0 4.5rem 3rem 4.5rem; }
     .icon-skills{ margin: 0 8rem; }
-    .job-section{ margin: 0 15% 3rem 15%; }
     .wrap-arrow{ margin: 0 0 0 17.3rem; }
     #arrow{ width: 24px; }
+    .job-wrapper{grid-template-columns: 97%;}
+    .job-section{ 
+        padding: 0 16% 0 14%; 
+        margin-bottom: 2rem;
+    }
     .job-experience h1{ font-size: 13px; }
     .job-experience p{ font-size: 9.5px; }
-    .card { padding: 0 10px; }
+    .job-experience .textbox h4{
+        font-size: 11px;
+    }
+    .job-experience .textbox p{
+        font-size: 9px;
+    }
     .card h1{ font-size: 21px; }
     .card h4{ font-size: 14px; }
     #githubcard, #linkedincard, #codepencard { height: 70px; }
     .project-container{ margin: 0 5rem 3rem 5rem; }
+}
+@media(max-width: 330px){
+    .about-me-text{ margin: 0 7%}
+    .about-me-wrapper .contact{ text-wrap: balance; }
+    .job-wrapper{ grid-template-columns: 79%;}
+    .job-section{ padding: 0 28% 0 18%; }
 }

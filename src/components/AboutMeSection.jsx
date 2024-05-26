@@ -7,9 +7,13 @@ const AboutMeSection = () => {
     return (
         <div className='about-me-wrapper'>
             <div className='photography'></div>
-            <p>{translations.about_me_section.presentation[0]}</p>
-            <p>{translations.about_me_section.presentation[1]}</p>
-            <p>{translations.about_me_section.presentation[2]}</p>
+
+            <div className='about-me-text'>
+                <p>{translations.about_me_section.presentation[0]}</p>
+                <p>{translations.about_me_section.presentation[1]}</p>
+                <p>{translations.about_me_section.presentation[2]}</p>
+            </div>
+            
             <div className='contact'>
                 <h2>{translations.about_me_section.contact[0]}</h2>
                 <hr/>
