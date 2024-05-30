@@ -5,8 +5,8 @@
     </g>
     <defs>
     <linearGradient id="paint0_linear_167_34" x1="125" y1="13" x2="125" y2="263" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#60FFF8"/>
-    <stop offset="1" stop-color="#FC038C"/>
+    <stop stopColor="#60FFF8"/>
+    <stop offset="1" stopColor="#FC038C"/>
     </linearGradient>
     </defs>
 </svg>

@@ -1,20 +1,6 @@
 import React from 'react'
-import Html5 from './icons/Html5'
-import Css3 from './icons/Css3'
-import Javascript from './icons/Javascript'
-import ReactIcon from './icons/ReactIcon'
-import Sass from './icons/Sass'
-import Bootstrap from './icons/Bootstrap'
-import Figma from './icons/Figma'
-import Photoshop from './icons/Photoshop'
-import Git from './icons/Git'
-import MicrosoftSqlServer from './icons/MicrosoftSqlServer'
-import Scrum from './icons/Scrum'
-import VisualStudioCode from './icons/VisualStudioCode'
-import GreatBritain from './icons/GreatBritain'
-import TypeScript from './icons/TypeScript'
-import NodeJs from './icons/NodeJs'
 import { useLanguage } from '../context/LanguageContext';
+import * as icon from '../components/icons'
 
 const SkillSection = (props) => {
   const {translations} = useLanguage();
@@ -39,27 +25,31 @@ const SkillSection = (props) => {
         switch (props.title) {
           case 'frontend':
             return <div className='icon-skills'>
-                    <Html5/>
-                    <Css3/>
-                    <Javascript/>
-                    <TypeScript/>
-                    <ReactIcon/>
-                    <Sass/>
-                    <Bootstrap/>
+                    <icon.html5/>
+                    <icon.css3/>
+                    <icon.javascript/>
+                    <icon.typeScript/>
+                    <icon.reactIcon/>
+                    <icon.redux/>
+                    <icon.sass/>
+                    <icon.bootstrap/>
                   </div>
           case 'design':
             return <div className='icon-skills'>
-                    <Figma/>
-                    <Photoshop/>
+                    <icon.figma/>
+                    <icon.photoshop/>
                   </div>
           case 'others':
             return <div className='icon-skills'>
-                      <Git/>
-                      <MicrosoftSqlServer/>
-                      <NodeJs/>
-                      <Scrum/>
-                      <VisualStudioCode/>
-                      <GreatBritain/>
+                      <icon.git/>
+                      <icon.sql/>
+                      <icon.nodeJs/>
+                      <icon.studioCode/>
+                      <icon.confluence/>
+                      <icon.jmeter/>
+                      <icon.postman/>
+                      <icon.scrum/>
+                      <icon.greatBritain/>
                     </div>
           default:
             return null

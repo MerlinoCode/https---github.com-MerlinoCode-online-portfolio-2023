@@ -241,6 +241,7 @@ body {
     width: 115px;
     flex-direction: column;
 }
+.tech a{ text-align: center;}
 .tech-text{
     text-align: center;
     font-family: $Font-Stack-2;
@@ -558,4 +559,5 @@ footer{
     .about-me-wrapper .contact{ text-wrap: balance; }
     .job-wrapper{ grid-template-columns: 79%;}
     .job-section{ padding: 0 28% 0 18%; }
+    .footer-text{ width: 80%;}
 }

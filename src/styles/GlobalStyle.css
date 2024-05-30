@@ -286,6 +286,10 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
 }
 
+.tech a {
+  text-align: center;
+}
+
 .tech-text {
   text-align: center;
   font-family: Inter, sans_serif;
@@ -740,5 +744,8 @@ footer {
   }
   .job-section {
     padding: 0 28% 0 18%;
+  }
+  .footer-text {
+    width: 80%;
   }
 }/*# sourceMappingURL=GlobalStyle.css.map */
