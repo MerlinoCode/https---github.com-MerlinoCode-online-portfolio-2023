@@ -379,7 +379,7 @@ body::-webkit-scrollbar-track {
 
 .job-wrapper > :nth-child(3) { /*job-icon-section*/
   background-image: url("../components/icons/Arrow.svg");
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
@@ -479,6 +479,13 @@ footer {
   color: #61fff7;
 }
 
+@media (max-width: 1980px) {
+  .icon-skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+  }
+}
 @media (max-width: 1080px) {
   .container {
     padding: 0;
